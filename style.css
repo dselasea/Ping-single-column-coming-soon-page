@@ -1,0 +1,189 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: hsl(223, 87%, 63%);
+
+        /* Secondary */
+
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-blue: hsl(354, 100%, 66%);
+
+
+    /* Neutral */
+
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    color: var(--very-dark-blue);
+}
+
+header h3 {
+    font-weight: 300;
+    font-size: 50px;
+    color: var(--gray);
+    padding-top: 30px;
+}
+
+header #soon {
+    color:var(--very-dark-blue);
+    font-weight: 700;
+}
+
+header p {
+    font-weight: 300;
+    padding: 20px;
+}
+
+header form {
+    width: 100%;
+}
+
+ form label {
+    position: relative;
+}
+
+header form.form input {
+    border: 1px solid var(--light-blue);
+}
+
+.error {
+    position: absolute;
+    font-size: 18px;
+    top: 45px;
+    left: 30px;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--light-blue);
+   visibility: hidden;
+}
+
+header form input[type="text"] {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header form input {
+    padding: 15px 30px;
+    width: 33.33%;
+    border-radius: 50px;
+    margin-right: 10px;
+    border: 1px solid var(--pale-blue);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+header form input:focus,
+header button:focus {
+    outline: none;
+}
+
+header button {
+    padding: 17px 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--blue);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px var(--gray);
+}
+
+main {
+    margin: 70px 0;
+}
+
+main img {
+    width: 800px;
+    height: 500px;
+}
+
+footer .social {
+    padding: 10px 20px;
+}
+
+footer .social i {
+    padding: 10px;
+    color: var(--blue);
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social i:hover {
+    color: white;
+    background-color: var(--blue);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1024px){
+
+    header h3 {
+        font-weight: 300;
+        font-size: 20px;
+        color: var(--gray);
+        padding-top: 40px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    header form {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header form input,
+    header form button {
+        width: 90%;
+        padding: 12px 30px;
+        margin: 5px;
+    }
+
+    header form input {
+        padding: 12px 25px;
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    main img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    small {
+        text-align: center;
+        margin: 0;
+    }
+
+    .error {
+        top: 50px; 
+        font-style: normal;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        font-size: 12px;
+    }
+}
